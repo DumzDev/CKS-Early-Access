@@ -16,7 +16,7 @@
       padding: 0;
     }
     :root, body.is-fullscreen {
-      background-color: #ffffff;
+      background-color: #000000;
     }
     [hidden] {
       display: none !important;
@@ -315,7 +315,7 @@
       const projectData = await getProjectData();
       await scaffolding.loadProject(projectData);
       setProgress(1);
-      loadingScreen.hidden = true;
+      loadingScreen.hidden = false;
       if (true) {
         scaffolding.start();
       } else {
